@@ -44,26 +44,25 @@
     <label for="email">Email</label>
     <input type="email" id="email" name="email" required>
 
-    <label for="subject">Subject</label>
-    <select id="subject" name="subject" required>
-      <option value="" disabled selected>Select fulfillment option</option>
-      <option value="pickup">Order Request - Pick Up</option>
-      <option value="delivery">Order Request - Delivery</option>
-      <option value="flavor-inquiry">Flavor & Customization Inquiry</option>
-      <option value="other">Something else</option>
-    </select>
+    <label for="order_method">Order Method</label>
+<select id="order_method" name="order_method" required>
+  <option value="" disabled selected>Select order method</option>
+  <option value="pickup-store">Pick Up (In-Store)</option>
+  <option value="delivery-standard">Delivery (Standard)</option>
+  <option value="delivery-express">Delivery (Express)</option>
+</select>
 
     <label for="flavor">Flavor Choice</label>
     <select id="flavor" name="flavor" required>
       <option value="" disabled selected>Choose a flavor</option>
-      <option value="strawberry">Strawberry</option>
-      <option value="green-apple">Green Apple</option>
-      <option value="blue-raspberry">Blue Raspberry</option>
-      <option value="bubblegum">Bubblegum</option>
-      <option value="assorted">Assorted Pack</option>
+      <option value="strawberry">Strawberry Edibble</option>
+      <option value="green-apple">Green Apple Edibble</option>
+      <option value="blue-raspberry">Orange Edibble</option>
+      <option value="blueberry">Blueberry Edibble</option>
+      <option value="pineapple">Pineapple Edibble</option>
     </select>
 
-    <label for="quantity">Quantity (Packs/Bottles)</label>
+    <label for="quantity">Quantity (Bottles)</label>
     <input type="number" id="quantity" name="quantity" min="1" value="1" required>
 
     <label for="message">Message</label>
