@@ -67,6 +67,61 @@
     </section>
 </main>
 
+<section id="order-enquiry">
+  <h2>Order Enquiry</h2>
+
+  <form action="#" method="POST">
+    <fieldset>
+      <legend>Order Details</legend>
+
+      <label for="enquiry-flavor">Choose Flavor</label>
+      <select id="enquiry-flavor" name="flavor" required>
+        <option value="" disabled selected>Select a flavor</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="green-apple">Green Apple</option>
+        <option value="orange">Orange</option>
+        <option value="blueberry">Blueberry</option>
+        <option value="pineapple">Pineapple</option>
+        <option value="assorted">All Flavors Pack</option>
+      </select>
+
+      <label for="enquiry-quantity">Quantity</label>
+      <input type="number" id="enquiry-quantity" name="quantity" min="1" max="20" value="1" required>
+
+      <fieldset>
+        <legend>Order Method</legend>
+
+        <input type="radio" id="order-pickup" name="delivery_method" value="pickup" required>
+        <label for="order-pickup">Pick Up</label>
+
+        <input type="radio" id="order-standard" name="delivery_method" value="standard">
+        <label for="order-standard">Standard Delivery</label>
+
+        <input type="radio" id="order-express" name="delivery_method" value="express">
+        <label for="order-express">Express Delivery</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Optional Extras</legend>
+
+        <input type="checkbox" id="extra-gift" name="extras[]" value="gift-wrapping">
+        <label for="extra-gift">Gift Wrapping</label>
+
+        <input type="checkbox" id="extra-flavor-pack" name="extras[]" value="extra-flavor-pack">
+        <label for="extra-flavor-pack">Extra Flavor Solution Refill</label>
+
+        <input type="checkbox" id="extra-bubble-wand" name="extras[]" value="custom-bubble-wand">
+        <label for="extra-bubble-wand">Custom Bubble Wand</label>
+      </fieldset>
+
+      <label for="enquiry-email">Contact Email</label>
+      <input type="email" id="enquiry-email" name="email" required>
+
+      <button type="submit">Send enquiry</button>
+    </fieldset>
+  </form>
+</section>
+
 <footer>
         <p>&copy; 2026 Russ Sells Edibbles. All rights reserved.</p>
 </footer>

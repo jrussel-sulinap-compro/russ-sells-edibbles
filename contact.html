@@ -37,36 +37,23 @@
 <form action="#" method="POST">
   <fieldset>
     <legend>Your details</legend>
-    
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" required>
+        <label for="contact-name">Name</label>
+    <input type="text" id="contact-name" name="name" required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
+    <label for="contact-email">Email</label>
+    <input type="email" id="contact-email" name="email" required>
 
-    <label for="order_method">Order Method</label>
-<select id="order_method" name="order_method" required>
-  <option value="" disabled selected>Select order method</option>
-  <option value="pickup-store">Pick Up (In-Store)</option>
-  <option value="delivery-standard">Delivery (Standard)</option>
-  <option value="delivery-express">Delivery (Express)</option>
-</select>
-
-    <label for="flavor">Flavor Choice</label>
-    <select id="flavor" name="flavor" required>
-      <option value="" disabled selected>Choose a flavor</option>
-      <option value="strawberry">Strawberry Edibble</option>
-      <option value="green-apple">Green Apple Edibble</option>
-      <option value="blue-raspberry">Orange Edibble</option>
-      <option value="blueberry">Blueberry Edibble</option>
-      <option value="pineapple">Pineapple Edibble</option>
+    <label for="contact-subject">Subject</label>
+    <select id="contact-subject" name="subject" required>
+      <option value="" disabled selected>Select a topic</option>
+      <option value="flavor-question">Edible Bubble Flavors</option>
+      <option value="party-order">Party & Event Inquiries</option>
+      <option value="dietary-info">Allergies & Ingredients</option>
+      <option value="something-else">Something else</option>
     </select>
 
-    <label for="quantity">Quantity (Bottles)</label>
-    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" required placeholder="Add any special requests or delivery address..."></textarea>
+    <label for="contact-message">Message</label>
+    <textarea id="contact-message" name="message" rows="5" required></textarea>
 
     <button type="submit">Send message</button>
   </fieldset>
