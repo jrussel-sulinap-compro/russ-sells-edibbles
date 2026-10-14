@@ -34,6 +34,44 @@
   <hr>
   <hr>
   <br>  
+<form action="#" method="POST">
+  <fieldset>
+    <legend>Your details</legend>
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject" required>
+      <option value="" disabled selected>Select fulfillment option</option>
+      <option value="pickup">Order Request - Pick Up</option>
+      <option value="delivery">Order Request - Delivery</option>
+      <option value="flavor-inquiry">Flavor & Customization Inquiry</option>
+      <option value="other">Something else</option>
+    </select>
+
+    <label for="flavor">Flavor Choice</label>
+    <select id="flavor" name="flavor" required>
+      <option value="" disabled selected>Choose a flavor</option>
+      <option value="strawberry">Strawberry</option>
+      <option value="green-apple">Green Apple</option>
+      <option value="blue-raspberry">Blue Raspberry</option>
+      <option value="bubblegum">Bubblegum</option>
+      <option value="assorted">Assorted Pack</option>
+    </select>
+
+    <label for="quantity">Quantity (Packs/Bottles)</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required placeholder="Add any special requests or delivery address..."></textarea>
+
+    <button type="submit">Send message</button>
+  </fieldset>
+</form>
 </main>
 </body>
   
